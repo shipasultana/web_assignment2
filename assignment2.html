@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Assignment2</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body onload="fortune()">
+   <h1>Step1</h1>
+   <p id="fortune"></p>
+
+    
+    <h1>step2</h1>
+    <h2>currency convertor</h2>
+   <form name="converter">
+        <table border="0">
+        <tr>
+        <td>Tk: </td><td><input type="text" name="tk" onChange="tkConverter()" /></td>
+        </tr>
+        <tr>
+        <td>Euro: </td><td><input type="text" name="euro" onChange="euroConverter()" /></td>
+        </tr>
+        <tr>
+        <td>US Dollar: </td><td><input type="text" name="dollar" onChange="dollarConverter()" /></td>
+        </tr>
+        <tr>
+        <td>British Pound:</td><td><input type="text" name="pound" onChange="poundConverter()" /></td>
+        </tr>
+        <tr>
+        <td>Japanese Yen: </td><td><input type="text" name="yen" onChange="yenConverter()" /></td>
+        </tr>
+        <tr>
+        <td colspan="2" align="center"><input type="button" value="Convert!" /></td>
+        </tr>
+        </table>
+    </form>
+    
+    
+    <h1>step3</h1>
+    <h2>Quiz Question</h2>
+    <form action="/action_page.php">
+        <p>1.who is the best player?</p>
+            <input type="radio" name="1" value="a">A. sakib<br>
+            <input type="radio" name="1" value="b">B. Tamim<br>
+            <input type="radio" name="1" value="c">C. masrafi<br>  
+            <p id="ans1" style="color:green"></p>
+        <p>2.Who is the author of The Alchemist?</p>
+            <input type="radio" name="2" value="a"> A. X<br>
+            <input type="radio" name="2" value="b"> B. Y<br>
+            <input type="radio" name="2" value="c"> C. Z<br>  
+            <p id="ans2" style="color:green"></p>
+        <p>3.What is the capital of Bangladesh?</p>
+            <input type="radio" name="3" value="a">A. Gazipur<br>
+            <input type="radio" name="3" value="b">B. Dhaka<br>
+            <input type="radio" name="3" value="c">C. Comilla<br>  
+            <p id="ans3" style="color:green"></p>
+        
+        <p>4.How many ounces in a pound?</p>
+            <input type="radio" name="5" value="a">A. 10<br>
+            <input type="radio" name="5" value="b">B. 20<br>
+            <input type="radio" name="5" value="c">C. 16<br>  
+            <p id="ans5" style="color:green;"></p>
+        <h3 style="color:green" id="result"></h3>
+        <input type="button" value="Submit" onclick="quizQuestion()" />
+		</form>
+    
+    
+    <script src="js/script.js"></script>
+</body>
+</html>
